@@ -11,14 +11,14 @@ PRIMARY KEY (id)
 );
 
 INSERT INTO tb_colaboradores ( nome, cargo, email, salario)
-VALUES ("Jacqueline", "Gerente", "...", 35.000),
+VALUES ("Jacqueline", "Ge", "...", 35.000),
 ("Thiago", "Professor", "...", 15.000),
 ("Camila", "CEO", "...", 100.000),
 ("Vania", "Diretora", "...", 40.000),
 ("Eliana", "tesoureira", "...", 30.000);
 
 SELECT * FROM tb_colaboradores WHERE salario < 2000;
-
+SELECT * FROM tb_colaboradores WHERE salario > 2000;
 UPDATE tb_colaboradores SET salario = 20.000 WHERE id = 2;
 UPDATE tb_colaboradores SET nome = "Vania Melo" WHERE id = 4;
 
